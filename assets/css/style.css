@@ -1308,7 +1308,7 @@ nav .fas{
     top: 0;
     right: -100vw;
     text-align: left;
-    z-index: 3;
+    z-index: 5;
     transition: 1s ;
   }
   nav .fas{
