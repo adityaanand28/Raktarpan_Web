@@ -10,6 +10,8 @@
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Dosis:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 
   <!-- Bootsrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -25,6 +27,35 @@
 
   <!-- Modernizr -->
   <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  <script>// For toggle-menu
+
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+      navLinks.style.right ="0";
+    }
+    function hideMenu(){
+      navLinks.style.right ="-100vw";
+    
+    }</script>
+  <style>
+@media(max-width:780px){
+
+.nav-links ul{
+  display:block;
+}
+}
+
+.carousel-inner{
+margin-top:10px;
+
+
+
+
+}
+
+
+  </style>
 
 
 </head>
@@ -32,19 +63,12 @@
 <body>
 
 
+
+
+
   <header class="main-header">
 
-
-    <nav class="navbar navbar-static-top">
-
-      <div class="navbar-top">
-
-        <div class="container">
-          <div class="row">
-
-              <div class="col-sm-6 col-xs-12">
-
-                  <ul class="list-unstyled list-inline header-contact">
+                  <ul class="navbar-top">
                       <li> <i class="fa fa-phone"></i> <a href="tel:">+91 8882 982 982 </a> </li>
                       <li> <i class="fa fa-envelope"></i> <a
                               href="mailto:raktarpaniitkanpur@gmail.com">raktarpaniitkanpur@gmail.com</a>
@@ -55,44 +79,51 @@
 
                   </ul> <!-- /.header-contact  -->
 
-              </div>
+              
+    
 
-
-
-          </div>
-      </div>
-
-        <div class="navbar-main" style="width:100%">
-
-          <div class="container">
-
+        <nav >
             
+              <a class="" href="index.html"><img src="assets/images/sadaka-logo.png" alt=""></a>
 
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
-              <a class="navbar-brand" href="index.html"><img src="assets/images/sadaka-logo.png" alt=""></a>
-              <ul class="nav navbar-nav">
+           <div id="navLinks" class="nav-links">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+              <ul>
 
-                <li class="nav-item"><a class = "nav-link" class="is-active" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class = "nav-link" href="about.html">ABOUT US</a></li>
-                <li class="nav-item"><a class = "nav-link" href="blood.html">ABOUT BLOOD</a></li>
-                <li class="nav-item"><a class = "nav-link" href="program.html">DEPARTMENTS</a></li>
-                <li class="nav-item"><a class = "nav-link" href="gallery.html">GALLERY</a></li>
-                <li class="nav-item"><a class = "nav-link" href="contact.html">GET INVOLVED</a></li>
-                <li class="nav-item"><a class = "nav-link" href="http://www.bloodconnect.org/request" target="_blank">RAISE A BLOOD REQUEST</a></li>
-                <li class="nav-item"><a class = "nav-link" href="#">DONOR STORIES</a></li>
-                <li class="nav-item"><a class = "nav-link" href="#">THALASSEMIA</a></li>
+                <li class=""><a class = "" class="is-active" href="index.html">HOME</a></li>
+                <li class=" drpdown"><a class = " dropbtn" href="#">ABOUT US</a>
+                
+                    <div class="dropdown-content">
+                      <a href="about.html">Why Raktarpan?</a>
+                      <a href="program.html">What do we do?</a>
+                      <a href="gallery.html">Gallery</a>
+                    </div>  
+                </li>
+                <li class=" drpdown"><a class = " dropbtn" href="#">BLOOD-Y FACTS</a>
+                  <div class="dropdown-content">
+
+                    <a href="blood.html">All About Blood</a>
+                    <a href="#">Thalassemia</a>
+          
+                  </div>  
+                
+                </li>
+                <li class=""><a class = "" href="contact.html">GET INVOLVED</a></li>
+                <li class=""><a class = "" href="http://www.bloodconnect.org/request" target="_blank">RAISE A BLOOD REQUEST</a></li>
+               <li><a class = "" href="team.html">OUR TEAM</a>
+    
+               </li>
+                
               </ul>
-
             </div>
-
-          </div> <!-- /.container -->
-
-        </div> <!-- /.navbar-main -->
+          
+            <i class="fas fa-bars" onclick="showMenu()"></i>
 
 
     </nav>
 
   </header> <!-- /. main-header -->
+<br>
 
 
 
