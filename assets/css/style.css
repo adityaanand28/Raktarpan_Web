@@ -352,11 +352,11 @@ text-align:left;
 /* program/program
 ================================= */
 .program {
-  padding-bottom: 15px;
+  /* padding-bottom: 15px;
   margin-bottom: 30px;
   margin-left: 150px;
   width:290px;
-  height:650px;
+  height:650px; */
   border: 2px solid #ff4c4c;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -521,8 +521,8 @@ text-align:left;
 .page-description {
   font-size: 18px;
   text-align: justify;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .main-container {
