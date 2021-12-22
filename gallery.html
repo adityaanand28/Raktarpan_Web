@@ -69,6 +69,9 @@ a img{
   width: 100%;
   border-radius: 5px;
 }
+.last_img{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
   .gallery {
@@ -83,6 +86,10 @@ a img{
   .gallery a:nth-of-type(3) {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
+  }
+
+  .last_img{
+      display: block;
   }
 }
 
@@ -314,7 +321,7 @@ a img{
         </a>
         <a href="assets/images/gallery/3.jpg" >
 
-            <div class="lightbox">
+            <div class="lightbox last_img">
                 <img src="assets/images/gallery/3.jpg" />
                 <span class="on-hover">
                     <span class="hover-caption"></span>
